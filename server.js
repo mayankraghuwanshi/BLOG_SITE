@@ -33,12 +33,12 @@ server.use('/home',(req , res)=>{
        res.render('index',{data:req.user})
     }
     else {
-        res.redirect('/blog/log_in.html')
+        res.redirect('/index.html')
     }
 })
-server.use(express.static('images'))
+server.use('/images',express.static(__dirname+'/images/'))
 server.use(express.static(__dirname+'/Public/user/'))
-server.use('/blog',express.static(__dirname+'/Public/user/'))
+server.use('/',express.static(__dirname+'/Public/user/'))
 server.use('/user' , require('./Routes/user'))
 server.use('/post' , require('./Routes/post'))
 
