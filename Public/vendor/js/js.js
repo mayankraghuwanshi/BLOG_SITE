@@ -10,7 +10,7 @@ function postBody(data) {
                     <div class="card-body">
                         <h2 class="card-title">${data.title}</h2>
                         <p class="card-text">${data.content}</p>
-                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
+                        <a href="#" class="btn btn-primary">UPVOTE :)</a>
                     </div>
                     <div class="card-footer text-muted">
                         Posted on ${data.date} by
@@ -25,7 +25,6 @@ $(function () {
          fechPost(function (posts){
 
              for(let i=0;i<posts.length;i++){
-                 console.log(posts[i])
                  post.append(postBody(posts[i]))
              }
          }

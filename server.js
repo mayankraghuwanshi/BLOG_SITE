@@ -37,8 +37,8 @@ server.use('/home',(req , res)=>{
     }
 })
 server.use('/images',express.static(__dirname+'/images/'))
-server.use(express.static(__dirname+'/Public/user/'))
-server.use('/',express.static(__dirname+'/Public/user/'))
+server.use(express.static(__dirname+'/Public/'))
+server.use('/',express.static(__dirname+'/Public/'))
 server.use('/user' , require('./Routes/user'))
 server.use('/post' , require('./Routes/post'))
 
