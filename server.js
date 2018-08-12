@@ -7,7 +7,7 @@ const session  = require('express-session');
 const server   = express();
 server.use(express.json());
 server.use(express.urlencoded({
-    extend:true
+    extend:false
 }));
 
 server.set('view engine','hbs');
@@ -36,6 +36,7 @@ server.use('/home',(req , res)=>{
         res.redirect('/blog/log_in.html')
     }
 })
+server.use(express.static('images'))
 server.use(express.static(__dirname+'/Public/user/'))
 server.use('/blog',express.static(__dirname+'/Public/user/'))
 server.use('/user' , require('./Routes/user'))
