@@ -26,11 +26,11 @@ passport.use(new LocalStrategy(function (username, password, done) {
 
         if (!user) {
             console.log(user)
-            return done(null, false, {message: "No such user"})
+            return done(new Error("USER NOT FOUND"), false, {message: "No such user"})
         }
         if (user.password !== password) {
 
-            return done(null, false, {message: "Wrong password"})
+            return done(new Error("WRONG PASSWORD"), false, {message: "Wrong password"})
         }
         return done(null, user)
     }).catch((err) => {

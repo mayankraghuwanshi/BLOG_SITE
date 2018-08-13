@@ -23,7 +23,7 @@ server.use('/static',express.static(__dirname+"/views/"));
 mongoose.connect('mongodb://localhost:27017/blog');
 
 server.get('/fail',(req , res)=>{
-   res.send("fail");
+   res.send({error:err});
 })
 server.get('/success',(req , res)=>{
    res.send("success");
