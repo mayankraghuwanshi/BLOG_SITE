@@ -25,6 +25,21 @@ route.post('/',( req , res )=>{
     })
 
 })
+route.post('/create',(req , res)=>{
+    const user = new USER({
+        first_name : req.body.first_name,
+        last_name : req.body.last_name,
+        username : req.body.username,
+        password : req.body.password
+    });
+    user.save().then((data)=>{
+        res.redirect('/home')
+    })         .catch((err)=>{
+        res.send({error:err})
+    })
+
+
+})
 
 route.post('/login',passport.authenticate('local', {
 

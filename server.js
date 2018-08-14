@@ -44,5 +44,5 @@ server.use('/post' , require('./Routes/post'))
 
 
 server.listen(1221,()=>{
-    console.log('http://localhost:1221/check')
+    console.log('http://localhost:1221/home')
 })

@@ -20,6 +20,7 @@ function postBody(data) {
 }
 
 $(function () {
+
      const post = $("#postbody");
     post.empty()
          fechPost(function (posts){
