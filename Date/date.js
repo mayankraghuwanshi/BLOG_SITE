@@ -1,6 +1,6 @@
 module.exports = function date(){
     let actualdate = new Date();
-    let day = actualdate.getDay()+5;
+    let day = actualdate.getDate();
     if(day<10){
         day =`0${actualdate.getDay()+5}`
     }
@@ -10,4 +10,6 @@ module.exports = function date(){
     }
     let year = actualdate.getFullYear();
     return `${day}/${month}/${year}`;
+
+
 }
