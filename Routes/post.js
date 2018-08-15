@@ -38,18 +38,22 @@ route.get('/',(req , res)=>{
  })
  })
 
-route.post('/',upload.single('image'),(req , res)=>{
+route.post('/create',upload.single('image'),(req , res)=>{
+    if(req.user){
     const post = new POST({
           title : req.body.title,
         content : req.body.content,
-       username : req.body.username,
+       username : req.user.username,
      image_path : req.file.path
     });
     post.save().then((data)=>{
-            res.redirect('/post')
+            res.redirect('/home')
     })         .catch((err)=>{
             res.send({error:err})
-    })
+    })}
+    else {
+        req.redirect('/log_in.html')
+    }
 })
 
 

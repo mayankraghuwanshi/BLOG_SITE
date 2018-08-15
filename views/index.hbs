@@ -9,6 +9,7 @@
               border: 1px;
               border-radius: 5px;
           }
+
       </style>
 
     <meta charset="utf-8">
@@ -23,7 +24,7 @@
     <link href="../vendor/css/blog-post.css" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     </head>
-    <body>
+    <body >
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -70,16 +71,34 @@
             <!-- Blog Entries Column -->
             <div class="col-md-8">
 
-                <h1 class="my-4">Page Heading
+                <!--<h1 class="my-4">Page Heading
                     <small>Secondary Text</small>
-                </h1>
+                </h1>-->
 
                 <!-- Blog Post -->
+                <div class="mt-4"><div class="card mb-4 p-1">
+                    <form method="post" action="/post/create" enctype="multipart/form-data">
+                        <h2 class="text-center">New Post</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="TITLE :" name="title">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control"  id="content" placeholder="BLOG:" name="content">
+                        </div>
+                        <div class="form-group">
+                            <input type="file" class="form-control" name="image">
+                        </div>
+                        <div class="form-group form-check">
+
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="btn">POST</button>
+                    </form>
+                </div></div>
                 <div id="postbody">
 
                 </div>
 
-                <!-- Pagination -->
+                <!-- Pagination
                 <ul class="pagination justify-content-center mb-4">
                     <li class="page-item">
                         <a class="page-link" href="#">&larr; Older</a>
@@ -87,7 +106,7 @@
                     <li class="page-item disabled">
                         <a class="page-link" href="#">Newer &rarr;</a>
                     </li>
-                </ul>
+                </ul>-->
 
             </div>
 
@@ -147,13 +166,13 @@
                     </div>
                 </div>
 
-                <!-- Side Widget -->
+                <!-- Side Widget
                 <div class="card my-4">
                     <h5 class="card-header">Side Widget</h5>
                     <div class="card-body">
                         You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
                     </div>
-                </div>
+                </div>-->
 
             </div>
 
