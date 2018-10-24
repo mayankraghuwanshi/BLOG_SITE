@@ -20,14 +20,8 @@ server.use(flash());
 server.use(passport.initialize());
 server.use(passport.session());
 server.use('/static',express.static(__dirname+"/views/"));
-mongoose.connect('mongodb://localhost:27017/blog');
+mongoose.connect('mongodb://mayankraghuvanshi:singh7272@ds125058.mlab.com:25058/blog-post');
 
-server.get('/fail',(req , res)=>{
-   res.send({error:err});
-})
-server.get('/success',(req , res)=>{
-   res.send("success");
-})
 server.use('/home',(req , res)=>{
     if(req.user){
        res.render('index',{data:req.user})
