@@ -4,7 +4,7 @@ const passport = require('passport');
 const hbs      = require('hbs');
 const flash    = require('connect-flash');
 const session  = require('express-session');
-const SERVER_PORT = precess.env.PORT || 1221
+const SERVER_PORT = process.env.PORT || 1221
 const server   = express();
 server.use(express.json());
 server.use(express.urlencoded({
