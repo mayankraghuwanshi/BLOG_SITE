@@ -22,7 +22,7 @@ body {
 .sec-1{
   height: 500px;
   width: 100%;
-  background-image: url("../../images/head.jpg");
+  background-image: url("../../images/mainFile/head.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
