@@ -12,5 +12,8 @@ router.get('/show',(req , res)=>{
         res.render('index' ,data = err )
     })
 })
+router.get('/'  , (req , res)=>{
+    res.render('home')
+})
 
 module.exports = router;
