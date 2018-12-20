@@ -1,14 +1,12 @@
-const route = require('express').Router();
-const POST = require('../models/post');
-const multer = require('multer');
-const storage = multer.diskStorage({
-    destination:function(req , file ,done){
+const router      = require('express').Router();
+const POST        = require('../models/post');
+const multer      = require('multer');
+const storage     = multer.diskStorage({
+    destination:function(req , file , done){
         done(null , 'images');
     },
-            filename : function (req , file , done) {
-                done(null , file.originalname);
-            }
-    })
+    filename : function (req , file , done) {
+                done(null , file.originalname);}})
 
 
 const fileFilter = function(req , file , done){
@@ -24,13 +22,14 @@ const upload = multer({
     fileFilter:fileFilter
   })
 
-route.post('/image',upload.single('image'),(req , res)=>{
+//just for testing
+router.post('/image',upload.single('image'),(req , res)=>{
     res.send(req.file)
 })
 
 
-
-route.get('/',(req , res)=>{
+//fetch all posts
+router.get('/',(req , res)=>{
  POST.find({}).then((data)=>{
            res.send(data)
  })           .catch((err)=>{
@@ -38,8 +37,12 @@ route.get('/',(req , res)=>{
  })
  })
 
-route.post('/create',upload.single('image'),(req , res)=>{
-    if(req.user){
+router.get('/create' , (req , res)=>{
+    res.render('postc')
+})
+
+//create new posts
+router.post('/create',upload.single('image'),(req , res)=>{
     const post = new POST({
           title : req.body.title,
         content : req.body.content,
@@ -48,14 +51,12 @@ route.post('/create',upload.single('image'),(req , res)=>{
     });
     post.save().then((data)=>{
             res.redirect('/home')
-    })         .catch((err)=>{
+    }).catch((err)=>{
             res.send({error:err})
-    })}
-    else {
-        req.redirect('/log_in.html')
-    }
+    })
+
 })
 
 
 
-module.exports = route;
+module.exports = router;

@@ -21,7 +21,8 @@ server.use(flash());
 server.use(passport.initialize());
 server.use(passport.session());
 server.use('/static',express.static(__dirname+"/views/"));
-mongoose.connect('mongodb://mayankraghuvanshi:singh7272@ds125058.mlab.com:25058/blog-post');
+mongoose.connect('mongodb://localhost:27017/blog-post');
+//mongoose.connect('mongodb://mayankraghuvanshi:singh7272@ds125058.mlab.com:25058/blog-post');
 
 server.use('/home',(req , res)=>{
     if(req.user){
@@ -32,8 +33,6 @@ server.use('/home',(req , res)=>{
     }
 })
 server.use('/images',express.static(__dirname+'/images/'))
-server.use(express.static(__dirname+'/Public/'))
-server.use('/',express.static(__dirname+'/Public/'))
 server.use('/user' , require('./Routes/user'))
 server.use('/post' , require('./Routes/post'))
 
