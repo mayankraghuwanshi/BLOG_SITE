@@ -1,4 +1,7 @@
 {{>mainheader}}
+{{# if user}}
+{{>create}}
+{{/if}}
 {{# if err}}
     <h1>Error hai bhai</h1>
 {{else}}
@@ -10,4 +13,4 @@
 
     {{/each}}
     </div>
-    {{/ if}}
+{{/if}}

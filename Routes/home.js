@@ -3,7 +3,7 @@ const hbs         = require('express-handlebars');
 const axios       = require('axios')
 
 router.get('/show',(req , res)=>{
-    axios.get('http://localhost:1221/post').then((data)=>{
+    axios.get('https://mayankblog.herokuapp.com/post').then((data)=>{
         res.render('posts' , data )
     }).catch((err)=>{
         console.log('error')

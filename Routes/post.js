@@ -48,7 +48,7 @@ router.post('/create',upload.single('image'),(req , res)=>{
     const post = new POST({
           title : req.body.title,
         content : req.body.content,
-       username : req.body.username,
+       username : req.user.username,
      image_path : req.file.path
     });
     post.save().then((data)=>{

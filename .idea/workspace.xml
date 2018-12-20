@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af408dec-5bd0-4ee8-b0e1-8085e5adad7c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Routes/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Routes/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/post.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/post.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.hbs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Routes/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="115">
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -30,7 +28,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Routes/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-548">
+            <state relative-caret-position="115">
               <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
             </state>
           </provider>
@@ -39,17 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="322">
               <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -66,8 +55,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/userc.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-161">
+            <state relative-caret-position="414">
               <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/partials/create.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,17 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Routes/post.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/post.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="115">
+              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -104,6 +97,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
               <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/home.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -141,7 +143,6 @@
         <option value="$PROJECT_DIR$/views/posts.hbs" />
         <option value="$PROJECT_DIR$/views/userl.hbs" />
         <option value="$PROJECT_DIR$/views/partials/mainheader.hbs" />
-        <option value="$PROJECT_DIR$/views/home.hbs" />
         <option value="$PROJECT_DIR$/views/layouts/layout.hbs" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/server.js" />
@@ -149,9 +150,11 @@
         <option value="$PROJECT_DIR$/Routes/cloudinary.js" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/views/userc.hbs" />
-        <option value="$PROJECT_DIR$/Routes/post.js" />
         <option value="$PROJECT_DIR$/views/post.hbs" />
         <option value="$PROJECT_DIR$/Routes/user.js" />
+        <option value="$PROJECT_DIR$/views/home.hbs" />
+        <option value="$PROJECT_DIR$/Routes/post.js" />
+        <option value="$PROJECT_DIR$/views/partials/create.hbs" />
         <option value="$PROJECT_DIR$/Routes/home.js" />
       </list>
     </option>
@@ -179,12 +182,23 @@
             <path>
               <item name="BLOG_SITE" type="b2602c69:ProjectViewProjectNode" />
               <item name="BLOG_SITE" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BLOG_SITE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BLOG_SITE" type="462c0819:PsiDirectoryNode" />
               <item name="Routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BLOG_SITE" type="b2602c69:ProjectViewProjectNode" />
               <item name="BLOG_SITE" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BLOG_SITE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BLOG_SITE" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -245,12 +259,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545299361321</updated>
-      <workItem from="1545299364230" duration="39327000" />
+      <workItem from="1545299364230" duration="41433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39327000" />
+    <option name="totallyTimeSpent" value="41433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -258,15 +272,15 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.15730338" />
-      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.4985207" visible="true" weight="0.15730338" />
+      <window_info id="Structure" order="3" sideWeight="0.50147927" side_tool="true" weight="0.15730338" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.04249292" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.04249292" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -360,13 +374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/layouts/layout.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -388,13 +395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -409,20 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/userc.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Routes/post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/post.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -432,15 +418,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Routes/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-548">
+        <state relative-caret-position="115">
           <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/userc.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Routes/post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/create.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Routes/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        <state relative-caret-position="115">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
