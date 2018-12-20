@@ -13,7 +13,8 @@ router.get('/show',(req , res)=>{
 })
 
 router.get('/',(req , res)=>{
-    axios.get('http://localhost:1221/post').then((data)=>{
+    //http://localhost:1221/post
+    axios.get('https://mayankblog.herokuapp.com/post').then((data)=>{
         res.render('home' , data ,)
     }).catch((err)=>{
         console.log('err')
