@@ -52,7 +52,7 @@ router.post('/create',upload.single('image'),(req , res)=>{
      image_path : req.file.path
     });
     post.save().then((data)=>{
-            res.redirect('/home')
+            res.redirect('/')
     }).catch((err)=>{
             res.send({error:err})
     })

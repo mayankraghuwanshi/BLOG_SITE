@@ -4,7 +4,6 @@ const router       = require('express').Router();
 
 //get all users
 router.get('/show',(req , res)=>{
-      console.log("trying to get data")
 USER.find({}).then((data)=>{
           res.send(data)
 })           .catch((err)=>{
