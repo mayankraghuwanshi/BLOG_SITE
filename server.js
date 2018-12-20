@@ -24,19 +24,44 @@ server.set('view engine' , 'hbs')
 server.use(session({
     secret:"ftaftkrlorecover"
 }));
-server.use(flash());
+//You can fetch user just by user.name using this function
+
+
+
+
 server.use(passport.initialize());
 server.use(passport.session());
 server.use('/static',express.static(__dirname+"/views/"));
 //mongoose.connect('mongodb://localhost:27017/blog-post');
 mongoose.connect('mongodb://mayankraghuvanshi:singh7272@ds125058.mlab.com:25058/blog-post');
 
+
+
+
+function Logcheck(req , res ,next) {
+    if(!req.isAuthenticated()){
+        req.session.error_login = "Please Login first"
+        res.redirect("/user/login")
+    }
+    else{
+        next()}
+}
+server.use(flash());
+server.use(function (req, res, next) {
+    res.locals.user = req.user || null;
+    next();
+});
+
+
+
+
 //for assets
 server.use(express.static(path.join(__dirname , 'public')))
 server.use('/images',express.static(__dirname+'/images/'))
 server.use('/user' , require('./Routes/user'))
 server.use('/post' , require('./Routes/post'))
-server.use('/' , require('./Routes/home'))
+server.use('/' , Logcheck, require('./Routes/home'))
+
 
 
 server.listen(SERVER_PORT,()=>{

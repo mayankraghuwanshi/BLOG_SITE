@@ -58,8 +58,8 @@ router.post('/create',upload.single('image'),(req , res)=>{
 })
 
 router.get('/find:id' , (req , res)=>{
+      console.log(req.user)
     POST.findOne({_id : req.params.id}).then((data)=>{
-        console.log(data)
         res.render('post' , {data : data})
     })           .catch((err)=>{
         console.log(err)

@@ -39,7 +39,7 @@ router.get('/login' , (req , res)=>{
 router.post('/login',passport.authenticate('local', {
 
     failureRedirect : '/fail',
-    successRedirect : '/home',
+    successRedirect : '/',
        failureFlash : true
 }))
 //Log out
