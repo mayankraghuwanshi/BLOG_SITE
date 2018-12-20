@@ -1,0 +1,24 @@
+.box{
+    width: 400px;
+    height: 500px;
+}
+.center{
+    margin: 20px auto;
+}
+.imgm{
+    width: 100%;
+    height: 600px;
+}
+.box-2{
+    width: 200px;
+    margin: 20px auto;
+}
+
+.box-3{
+    width: 300px;
+    margin: 20px auto;
+}
+.box-4{
+    width: 400px;
+    margin: 20px auto;
+}

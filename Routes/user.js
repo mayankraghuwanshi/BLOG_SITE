@@ -13,7 +13,7 @@ USER.find({}).then((data)=>{
 })
 //create new user
 router.get('/create' , (req , res)=>{
-    res.render('login')
+    res.render('userc')
 
 })
 router.post('/create',(req , res)=>{
@@ -31,6 +31,10 @@ router.post('/create',(req , res)=>{
 
 
 })
+router.get('/login' , (req , res)=>{
+    res.render('userl')
+})
+
 //Log in validation
 router.post('/login',passport.authenticate('local', {
 

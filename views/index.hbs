@@ -1,0 +1,11 @@
+{{> mainheader}}
+{{#if err}}
+    <h1>{{err}}</h1>
+    {{else}}
+    {{# each data}}
+       <div><img src="{{this.image_path}}" class="imgm"></div>
+        {{/ each}}
+{{/if}}
+
+
+
