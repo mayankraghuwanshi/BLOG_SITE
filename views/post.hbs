@@ -1,0 +1,15 @@
+{{> mainheader}}
+{{#if err}}
+    <h1>{{err}}</h1>
+    {{else}}
+               <img src="/{{data.image_path}}" class="img-box-m">
+            <div class="in-container">
+                <h1 class="title">{{data.title}}</h1><br>
+                <h3>{{data.content}}</h3>
+                <p align="right">{{data.date}} by {{data.username}}</p>
+            </div>
+        </div>
+{{/if}}
+
+
+

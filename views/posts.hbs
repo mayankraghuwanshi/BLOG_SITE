@@ -1,18 +1,15 @@
 {{> mainheader}}
 {{#if err}}
     <h1>{{err}}</h1>
-    {{else}}
+{{else}}
     {{# each data}}
-
         <div><img src="{{this.image_path}}" class="img-box">
             <div class="in-container">
                 <h1 class="title">{{this.title}}</h1><br>
                 <h3>{{this.content}}</h3>
                 <p align="right">{{this.date}} by {{this.username}}</p>
             </div>
-        </div>
-        {{/ each}}
-{{/if}}
+        </div>{{/each}}{{/if}}
 
 
 

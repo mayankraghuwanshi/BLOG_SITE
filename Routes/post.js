@@ -46,7 +46,7 @@ router.post('/create',upload.single('image'),(req , res)=>{
     const post = new POST({
           title : req.body.title,
         content : req.body.content,
-       username : req.user.username,
+       username : req.body.username,
      image_path : req.file.path
     });
     post.save().then((data)=>{
@@ -57,6 +57,15 @@ router.post('/create',upload.single('image'),(req , res)=>{
 
 })
 
+router.get('/find:id' , (req , res)=>{
+    POST.findOne({_id : req.params.id}).then((data)=>{
+        console.log(data)
+        res.render('post' , {data : data})
+    })           .catch((err)=>{
+        console.log(err)
+        res.render('post', err )
+    })
+})
 
 
 module.exports = router;
