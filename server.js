@@ -60,7 +60,7 @@ server.use(express.static(path.join(__dirname , 'public')))
 server.use('/images',express.static(__dirname+'/images/'))
 server.use('/user' , require('./Routes/user'))
 server.use('/post' , require('./Routes/post'))
-server.use('/' , Logcheck, require('./Routes/home'))
+server.use('/' ,  require('./Routes/home'))
 
 
 

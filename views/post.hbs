@@ -6,10 +6,12 @@
     {{else}}
                <img src="/{{data.image_path}}" class="img-box-m">
             <div class="in-container">
-                <h1 class="title">{{data.title}}</h1><br>
+                <h1 class="title" style="color: #17a2b8;">{{data.title}}</h1><br>
                 <h3>{{data.content}}</h3>
                 <p align="right">{{data.date}} by {{data.username}}</p>
-                
+                     {{#if data.username.isuser.username}}
+                         ya
+                     {{/if}}
             </div>
         </div>
 {{/if}}

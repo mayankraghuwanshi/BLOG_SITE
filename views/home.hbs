@@ -4,9 +4,10 @@
 {{else}}
     <div class="row">
     {{# each data}}
+        <div class="col-lg-4 col-md-4 col-sm-6 p-3"><div class="fill"><img src="{{this.image_path}}" class="img-box">
+            <a href="/post/find{{this._id}}"><p align="center">{{this.title}}</p></a>
+        </div></div>
 
-        <div class="col-lg-4 col-md-4 col-sm-6 p-3"><div class="fill m-1"><img src="{{this.image_path}}" class="img-box"><a href="/post/find{{this._id}}"><p align="center">{{this.title}}</p></a>
-    </div></div>
     {{/each}}
     </div>
     {{/ if}}
