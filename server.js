@@ -12,6 +12,7 @@ server.use(express.json());
 server.use(express.urlencoded({
     extend:false
 }));
+require('dotenv').config()
 
 server.engine('hbs', hbs({
     extname: "hbs",
