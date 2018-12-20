@@ -1,6 +1,7 @@
 const router      = require('express').Router();
 const POST        = require('../models/post');
 const multer      = require('multer');
+const cloudinary = require('cloudinary')
 const storage     = multer.diskStorage({
     destination:function(req , file , done){
         done(null , 'images');
@@ -23,8 +24,9 @@ const upload = multer({
   })
 
 //just for testing
-router.post('/image',upload.single('image'),(req , res)=>{
-    res.send(req.file)
+router.post('/image',upload.single('image'),async (req , res)=>{
+const result = await cloudinary.v2.uploader.upload("req.file.path")
+    res.send(result)
 })
 
 
