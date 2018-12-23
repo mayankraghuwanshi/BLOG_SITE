@@ -4,7 +4,7 @@ const axios       = require('axios')
 
 router.get('/show',(req , res)=>{
     //https://mayankblog.herokuapp.com/post
-    axios.get('http://localhost:1221/post').then((data)=>{
+    axios.get('https://mayankblog.herokuapp.com/post').then((data)=>{
         res.render('posts' , data )
     }).catch((err)=>{
         console.log('error')
@@ -14,7 +14,7 @@ router.get('/show',(req , res)=>{
 
 router.get('/',(req , res)=>{
     //https://mayankblog.herokuapp.com/post
-    axios.get('http://localhost:1221/post').then((data)=>{
+    axios.get('https://mayankblog.herokuapp.com/post').then((data)=>{
         res.render('home' , data ,)
     }).catch((err)=>{
         console.log('err')
