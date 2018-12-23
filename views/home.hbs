@@ -2,9 +2,21 @@
 {{# if user}}
 {{>create}}
 {{/if}}
+{{# if fail}}
+    <div class="alert alert-danger container mt-3" role="alert">
+       {{fail}}
+    </div>
+{{/if}}
 {{# if err}}
     <h1>Error hai bhai</h1>
 {{else}}
+    <section class="sec-1 w% "><div class="box-40">
+        <h3>Welcome to</h3>
+        <h1 class="jumbo">CityTrip</h1>
+        <h4>The best way to find your trip</h4><br>
+        <p>Star Travel is a Premium HTML5 Responsive Multipurpose Template specially designed for Travel, Tour, Flight, Hotel, Car and Cruise booking/listing related business. Its features give your business a great boost and covert your visitors into real time customers.</p>
+    </div>
+    </section>
     <div class="row">
     {{# each data}}
         <div class="col-lg-3 col-md-4 col-sm-6 p-3"><div class="fill"><img src="{{this.image_path}}" class="img-box">

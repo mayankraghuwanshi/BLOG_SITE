@@ -58,13 +58,35 @@ router.post('/create',upload.single('image'),(req , res)=>{
     })
 
 })
+router.get('/delete:id' , async (req , res)=>{
+
+    if(req.user){
+        let post = await POST.findOne({_id : req.params.id})
+        if(post.username === req.user.username ){
+            POST.remove({_id : req.params.id}).then((data)=>{
+                req.flash('success' , "Post is deleted.")
+                res.redirect('/')
+            })           .catch((err)=>{
+                res.render('post', err )
+            })
+        }
+    else{
+            req.flash('fail' , "You can't delete this post..")
+            res.redirect('/')
+        }
+    }
+    else{
+        req.flash('fail' , "Please Log In first.")
+        res.redirect('/')
+    }
+
+})
+
 
 router.get('/find:id' , (req , res)=>{
-      console.log(req.user)
     POST.findOne({_id : req.params.id}).then((data)=>{
         res.render('post' , {data : data})
     })           .catch((err)=>{
-        console.log(err)
         res.render('post', err )
     })
 })

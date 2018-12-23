@@ -1,6 +1,11 @@
 {{> mainheader}}
 
 <div style="height: 30px;  width: 100%"></div>
+{{# if success}}
+    <div class="alert alert-success" role="alert">
+        {{success}}
+    </div>
+{{/ if}}
 {{#if err}}
     <h1>{{err}}</h1>
     {{else}}
@@ -9,9 +14,7 @@
                 <h1 class="title" style="color: #17a2b8;">{{data.title}}</h1><br>
                 <h3>{{data.content}}</h3>
                 <p align="right">{{data.date}} by {{data.username}}</p>
-                     {{#if data.username.isuser.username}}
-                         ya
-                     {{/if}}
+                <a href="/post/delete{{data._id}}" ><button style="float: right;">delete</button></a>
             </div>
         </div>
 {{/if}}

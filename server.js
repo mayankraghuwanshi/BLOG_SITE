@@ -49,6 +49,8 @@ function Logcheck(req , res ,next) {
 }
 server.use(flash());
 server.use(function (req, res, next) {
+    res.locals.success = req.flash("success")
+    res.locals.fail = req.flash('fail')
     res.locals.user = req.user || null;
     next();
 });

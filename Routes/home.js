@@ -3,8 +3,8 @@ const hbs         = require('express-handlebars');
 const axios       = require('axios')
 
 router.get('/show',(req , res)=>{
-    //https://localhost:1221/post
-    axios.get('https://mayankblog.herokuapp.com/post').then((data)=>{
+    //https://mayankblog.herokuapp.com/post
+    axios.get('http://localhost:1221/post').then((data)=>{
         res.render('posts' , data )
     }).catch((err)=>{
         console.log('error')
@@ -13,8 +13,8 @@ router.get('/show',(req , res)=>{
 })
 
 router.get('/',(req , res)=>{
-    //http://localhost:1221/post
-    axios.get('https://mayankblog.herokuapp.com/post').then((data)=>{
+    //https://mayankblog.herokuapp.com/post
+    axios.get('http://localhost:1221/post').then((data)=>{
         res.render('home' , data ,)
     }).catch((err)=>{
         console.log('err')
